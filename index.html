@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古诗连一连</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>古诗连一连</h1>
+        </header>
+        
+        <div class="poem-info">
+            <h2 class="poem-title"></h2>
+            <p class="poem-author"></p>
+        </div>
+        
+        <div class="game-container">
+            <div id="characters-grid"></div>
+            <canvas id="line-canvas"></canvas>
+        </div>
+
+        <div class="completed-poem">
+            <h3>已完成诗句：</h3>
+            <div class="poem-lines"></div>
+        </div>
+
+        <div class="button-container">
+            <button id="next-poem" class="next-poem-btn">下一首诗</button>
+        </div>
+    </div>
+
+    <script src="scripts/poemdata.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
